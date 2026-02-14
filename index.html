@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEO Booster — Generative Engine Optimization (GEO) Platform</title>
+    <style>
+      body{margin:0;background:#0f172a;color:#f1f5f9;font-family:system-ui,sans-serif;min-height:100vh}
+      #root{min-height:100vh}
+      #load-msg{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);color:#94a3b8}
+    </style>
+  </head>
+  <body>
+    <script>
+      if(location.protocol==='file:'){
+        document.write('<div style="padding:2rem;background:#0f172a;color:#fbbf24;font-family:system-ui;text-align:center;max-width:400px;margin:2rem auto;line-height:1.6">Please run the app first. Double-click <strong>START-APP.bat</strong> in the seo booster folder, or open a terminal and run: <code style="background:#1e293b;padding:0.2rem 0.5rem;border-radius:4px">npm run start</code>. Then open http://localhost:3001 in your browser.</div>');
+      }else{
+        document.write('<div id="root"><span id="load-msg">Loading your app...</span></div>');
+      }
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+      setTimeout(function(){
+        var m=document.getElementById('load-msg');
+        if(m&&m.parentNode){m.textContent="Taking a long time? Try double-clicking START-APP.bat, or run: npm run start. Then open http://localhost:3001 in your browser.";m.style.color='#fbbf24';m.style.maxWidth='360px';m.style.textAlign='center';m.style.lineHeight='1.5';}
+      },5000);
+    </script>
+  </body>
+</html>
